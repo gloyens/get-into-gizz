@@ -31,11 +31,23 @@ img {
 #album-cover {
   max-width: 400px;
   object-fit: contain;
+  box-shadow: 5px 5px 10px #000;
 }
 
 #album-info {
   max-width: 600px;
   padding: 50px;
+}
+
+.card {
+  margin: 0 20px;
+  max-width: 300px;
+  background-color: #333;
+  box-shadow: 5px 5px 10px #000;
+}
+
+#card-info {
+  padding: 10px 40px 40px;
 }
 
 /* Responsive */
@@ -48,6 +60,10 @@ img {
   
   #album-cover, #album-info {
     max-width: 100%;
+  }
+
+  .card {
+	margin: 50px auto;
   }
 }
 
