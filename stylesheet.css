@@ -4,14 +4,80 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Helvetica, sans-serif;
-  color: White;
+  font-family: Mulish, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #fff;
   background-color: #1a1a1a;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+h1 {
+  font-family: Merriweather, Georgia, serif;
+  margin-top: 0;
+}
+
+iframe {
+  margin: 20px 0;
+}
+
+/* Navigation */
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow: hidden; /* Disable scroll */
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; /* avoid conflict with close button on smaller screens */
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-family: Merriweather;
+  font-weight: 900;
+  font-size: 36px;
+  color: #888;
+  display: block;
+  transition: 0.3s; /* hover and font size transition */
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgba(255,255,255,0.5);
+  display: block;
+  transition: 0.3s;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/opacity */
+  padding: 15px 20px;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+}
+
+.overlay a:hover, .overlay a:focus, .menu-button:hover {
+  color: #fff;
 }
 
 /* Flexbox */
@@ -42,17 +108,49 @@ img {
 .card {
   margin: 0 20px;
   max-width: 300px;
-  background-color: #333;
+  height: 100%;
+  background-color: #222;
   box-shadow: 5px 5px 10px #000;
 }
 
 #card-info {
-  padding: 10px 40px 40px;
+  padding: 10px 30px 40px;
 }
+
+.button-primary {
+  background-color: #dedede;
+  border: none;
+  border-radius: 5px;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  font: 900 14px Mulish;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-primary:hover {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  text-align: right;
+}
+
 
 /* Responsive */
 
 @media only screen and (max-width: 640px) {
+  .menu-button {
+    background-color: rgba(0,0,0, 0.5);
+  }
+  
   .flex {
     flex-direction: column;
 	padding: 0;

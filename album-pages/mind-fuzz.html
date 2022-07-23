@@ -6,9 +6,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
 </head>
 
 <body>
+
+<div id="menu" class="overlay">
+  <button class="menu-button" onclick="closeMenu()"><i class="fa fa-bars"></i></button>
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Albums</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<button class="menu-button" onclick="openMenu()"><i class="fa fa-bars"></i></button>
 
 <div id="album" class="flex">
   <div class="flex-item-left">
@@ -26,7 +40,7 @@
 <div id="cards" class="flex">
   <div class="flex-item-left">
     <div class="card">
-	  <img src="../img/mind-fuzz.jpg"></img>
+	  <img src="../img/nonagon.jpg"></img>
 	  <div id="card-info">
 		<p>Give me more of the energy of the first half!</p>
         <button class="button-primary">Go to Nonagon Infinity</button>
@@ -36,15 +50,30 @@
   
   <div class="flex-item-right">
     <div class="card">
-	  <img src="../img/mind-fuzz.jpg"></img>
+	  <img src="../img/paper-mache.jpg"></img>
 	  <div id="card-info">
         <p>I preferred the chiller tracks towards the end</p>
-        <button class="button-primary">Go to Paper Maché Dream Balloon</button>
+        <button class="button-primary">Go to Paper Maché<br> Dream Balloon</button>
 	  </div>
 	</div>
   </div>
 </div>
 
-</body>
+<div class="footer">
+  <p>&#169;	2022</p>
+</div>
 
+<!-- Temp Scripts -->
+
+<script>
+function openMenu() {
+  document.getElementById("menu").style.height = "100%";
+}
+
+function closeMenu() {
+  document.getElementById("menu").style.height = "0%";
+}
+</script>
+
+</body>
 </html>
