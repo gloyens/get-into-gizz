@@ -25,6 +25,11 @@ img {
 
 h1 {
   font-family: Merriweather, Georgia, serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Merriweather, Georgia, serif;
   margin-top: 0;
 }
 
@@ -106,11 +111,16 @@ iframe {
   align-items: flex-start;
 }
 
+#introduction {
+  max-width: 600px;
+  padding: 0 50px;
+  text-align: center;
+}
+
 #album-cover {
   max-width: 400px;
   object-fit: contain;
   z-index: -1;
-  /*box-shadow: 5px 5px 10px #000;*/
   -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.4));
 }
 
@@ -152,6 +162,27 @@ iframe {
   background-color: #fff;
 }
 
+.button-introduction {
+  background-color: #ccc;
+  border: none;
+  border-radius: 10px;
+  color: #1a1a1a;
+  padding: 20px;
+  margin: 50px 100px;
+  font: 700 30px Merriweather;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-introduction:hover {
+  background-color: #1a1a1a;
+  border: none;
+  color: #fff;
+}
+
 .footer {
   background-color: #222;
   color: #555;
@@ -165,6 +196,7 @@ iframe {
 @media only screen and (max-width: 640px) {
   body {
 	color: #fff;
+	padding-top: 80px;
   }
   
   #hero {

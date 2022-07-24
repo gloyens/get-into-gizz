@@ -2,23 +2,36 @@
 <html lang="en">
 
 <head>
-<title>King Gizzard Albums</title>
+<title>I'm In Your Mind Fuzz</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
 </head>
 
 <body>
 
-<div id="album" class="flex">
-  <div class="flex-item-left">
-    <img id="album-cover" src="img/mind-fuzz.jpg"></img>
+<div id="hero"></div>
+
+<div id="menu" class="overlay">
+  <button id="overlay-button" class="menu-button" onclick="closeMenu()"><i class="fa fa-bars"></i></button>
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Albums</a>
+    <a href="#">Contact</a>
   </div>
-  <div class="flex-item-right">
-    <div id="album-info">
-	  <h1>I'm In Your Mind Fuzz</h1>
-      <p>This page will be replaced by a general introduction.</p>
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2QcTwxhZapPixm8ymwUgmE?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<button class="menu-button" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+
+<div id="album" class="flex">
+  <div class="flex-item-mid">
+    <div id="introduction">
+	  <h1>Get started<br>with Gizz</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a class="button-introduction" href="album-pages/mind-fuzz.html">Start here!</a>
     </div>
   </div>
 </div>
@@ -26,25 +39,40 @@
 <div id="cards" class="flex">
   <div class="flex-item-left">
     <div class="card">
-	  <img src="img/mind-fuzz.jpg"></img>
+	  <a href="album-pages/nonagon-infinity.html"><img src="img/nonagon.jpg"></img></a>
 	  <div id="card-info">
 		<p>Give me more of the energy of the first half!</p>
-        <button class="button-primary">Go to Nonagon Infinity</button>
+        <a class="button-primary" href="nonagon-infinity.html">Go to Nonagon Infinity</a>
 	  </div>
 	</div>
   </div>
   
   <div class="flex-item-right">
     <div class="card">
-	  <img src="img/mind-fuzz.jpg"></img>
+	  <a href="album-pages/paper-mache-dream-balloon.html"><img src="img/paper-mache.jpg"></img></a>
 	  <div id="card-info">
         <p>I preferred the chiller tracks towards the end</p>
-        <button class="button-primary">Go to Paper Maché Dream Balloon</button>
+        <a class="button-primary" href="paper-mache-dream-balloon.html">Go to Paper Maché<br> Dream Balloon</a>
 	  </div>
 	</div>
   </div>
 </div>
 
-</body>
+<div class="footer">
+  <p>&#169; gloyens 2022</p>
+</div>
 
+<!-- Temp Scripts -->
+
+<script>
+function openMenu() {
+  document.getElementById("menu").style.height = "100%";
+}
+
+function closeMenu() {
+  document.getElementById("menu").style.height = "0%";
+}
+</script>
+
+</body>
 </html>
