@@ -5,14 +5,22 @@
 body {
   margin: 0;
   font-family: Mulish, Helvetica, sans-serif;
-  font-weight: 300;
-  color: #fff;
+  color: #1a1a1a;
   background-color: #1a1a1a;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+#hero {
+  background-color: #ddd;
+  height: 80%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
 
 h1 {
@@ -65,7 +73,7 @@ iframe {
   font-size: 30px;
   text-decoration: none;
   font-size: 36px;
-  color: rgba(255,255,255,0.5);
+  color: #000;
   display: block;
   transition: 0.3s;
   background-color: rgb(0,0,0); /* Black fallback color */
@@ -76,8 +84,12 @@ iframe {
   cursor: pointer;
 }
 
-.overlay a:hover, .overlay a:focus, .menu-button:hover {
+.overlay a:hover, .overlay a:focus, #overlay-button:hover {
   color: #fff;
+}
+
+#overlay-button {
+  color: rgba(255,255,255,0.5);
 }
 
 /* Flexbox */
@@ -97,12 +109,15 @@ iframe {
 #album-cover {
   max-width: 400px;
   object-fit: contain;
-  box-shadow: 5px 5px 10px #000;
+  z-index: -1;
+  /*box-shadow: 5px 5px 10px #000;*/
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.4));
 }
 
 #album-info {
   max-width: 600px;
   padding: 50px;
+  padding-bottom: 0;
 }
 
 .card {
@@ -111,6 +126,7 @@ iframe {
   height: 100%;
   background-color: #222;
   box-shadow: 5px 5px 10px #000;
+  color: #fff;
 }
 
 #card-info {
@@ -118,12 +134,12 @@ iframe {
 }
 
 .button-primary {
-  background-color: #dedede;
+  background-color: #ddd;
   border: none;
   border-radius: 5px;
   color: #1a1a1a;
   padding: 10px 20px;
-  margin: 20px auto 0;
+  margin: 20px 20px 0;
   font: 900 14px Mulish;
   text-align: center;
   text-decoration: none;
@@ -138,7 +154,7 @@ iframe {
 
 .footer {
   background-color: #222;
-  color: #fff;
+  color: #555;
   padding: 30px;
   text-align: right;
 }
@@ -147,8 +163,21 @@ iframe {
 /* Responsive */
 
 @media only screen and (max-width: 640px) {
+  body {
+	color: #fff;
+  }
+  
+  #hero {
+	height: 0;
+  }
+  
   .menu-button {
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,0.5);
+  }
+  
+  .menu-button:hover {
+	color: #fff;
   }
   
   .flex {
