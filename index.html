@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-<title>I'm In Your Mind Fuzz</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <title>Get Into Gizz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+
+  <script type="text/javascript" src="kinggizz.js"></script>
 </head>
 
 <body>
@@ -19,41 +22,41 @@
   <button id="overlay-button" class="menu-button" onclick="closeMenu()"><i class="fa fa-bars"></i></button>
   <div class="overlay-content">
     <a href="#">Home</a>
-    <a href="#">Albums</a>
-    <a href="#">Contact</a>
+    <a href="#">Random Album</a>
   </div>
 </div>
 
 <button class="menu-button" onclick="openMenu()"><i class="fa fa-bars"></i></button>
 
-<div id="album" class="flex">
+<div class="flex">
   <div class="flex-item-mid">
     <div id="introduction">
-	  <h1>Get started<br>with Gizz</h1>
+	  <h1>Get into Gizz</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <a class="button-introduction" href="album-pages/mind-fuzz.html">Start here!</a>
     </div>
   </div>
 </div>
 
-<div id="cards" class="flex">
-  <div class="flex-item-left">
-    <div class="card">
+<div id="all-albums" class="flex">
+  <div class="flex-item-mid">
+    <div class="card-small">
 	  <a href="album-pages/nonagon-infinity.html"><img src="img/nonagon.jpg"></img></a>
-	  <div id="card-info">
-		<p>Give me more of the energy of the first half!</p>
-        <a class="button-primary" href="nonagon-infinity.html">Go to Nonagon Infinity</a>
-	  </div>
+	  <p id="card-small-info">Nonagon Infinity</p>
 	</div>
   </div>
   
-  <div class="flex-item-right">
-    <div class="card">
-	  <a href="album-pages/paper-mache-dream-balloon.html"><img src="img/paper-mache.jpg"></img></a>
-	  <div id="card-info">
-        <p>I preferred the chiller tracks towards the end</p>
-        <a class="button-primary" href="paper-mache-dream-balloon.html">Go to Paper Maché<br> Dream Balloon</a>
-	  </div>
+  <div class="flex-item-mid">
+    <div class="card-small">
+	  <a href="album-pages/paper-mache-dream-balloon.html"><img src="img/nonagon.jpg"></img></a>
+	  <p id="card-small-info">Paper Maché Dream Balloon</p>
+	</div>
+  </div>
+  
+  <div class="flex-item-mid">
+    <div class="card-small">
+	  <a href="album-pages/nonagon-infinity.html"><img src="img/nonagon.jpg"></img></a>
+	  <p id="card-small-info">Nonagon Infinity</p>
 	</div>
   </div>
 </div>
@@ -61,18 +64,6 @@
 <div class="footer">
   <p>&#169; gloyens 2022</p>
 </div>
-
-<!-- Temp Scripts -->
-
-<script>
-function openMenu() {
-  document.getElementById("menu").style.height = "100%";
-}
-
-function closeMenu() {
-  document.getElementById("menu").style.height = "0%";
-}
-</script>
 
 </body>
 </html>

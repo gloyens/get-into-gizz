@@ -15,7 +15,7 @@ img {
 }
 
 #hero {
-  background-color: #ddd;
+  background-color: #FFE7D7;
   height: 80%;
   width: 100%;
   display: block;
@@ -30,6 +30,7 @@ h1 {
 
 h2 {
   font-family: Merriweather, Georgia, serif;
+  font-size: 32px;
   margin-top: 0;
 }
 
@@ -121,7 +122,7 @@ iframe {
   max-width: 400px;
   object-fit: contain;
   z-index: -1;
-  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent, transparent, transparent, rgba(0,0,0,0.4));
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, transparent 0%, transparent 75%, rgba(0,0,0,0.4));
 }
 
 #album-info {
@@ -143,8 +144,24 @@ iframe {
   padding: 10px 30px 40px;
 }
 
+#all-albums {
+  flex-wrap: wrap;
+}
+
+.card-small {
+  margin: 20px;
+  max-width: 200px;
+  background-color: #222;
+  box-shadow: 5px 5px 10px #000;
+  color: #fff;
+}
+
+#card-small-info {
+  padding: 0 30px 10px;
+}
+
 .button-primary {
-  background-color: #ddd;
+  background-color: #fff;
   border: none;
   border-radius: 5px;
   color: #1a1a1a;
@@ -159,11 +176,11 @@ iframe {
 }
 
 .button-primary:hover {
-  background-color: #fff;
+  background-color: #FFE7D7;
 }
 
 .button-introduction {
-  background-color: #ccc;
+  background-color: #F3D1B9;
   border: none;
   border-radius: 10px;
   color: #1a1a1a;
@@ -196,11 +213,14 @@ iframe {
 @media only screen and (max-width: 640px) {
   body {
 	color: #fff;
-	padding-top: 80px;
   }
   
   #hero {
 	height: 0;
+  }
+  
+  .button-introduction {
+	background-color: #fff;
   }
   
   .menu-button {
@@ -223,6 +243,14 @@ iframe {
 
   .card {
 	margin: 50px auto;
+  }
+
+  #all-albums {
+	flex-direction: row;
+  }
+
+  .card-small {
+	margin: 10px;
   }
 }
 
