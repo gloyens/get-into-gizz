@@ -7,14 +7,13 @@ function closeMenu() {
 }
 
 function randomAlbum() {
-  var pages = ["mind-fuzz.html", 
-    "nonagon-infinity.html",
-    "paper-mache-dream-balloon.html"];
+  var pages = ["album-pages/mind-fuzz.html", 
+    "album-pages/nonagon-infinity.html",
+    "album-pages/paper-mache-dream-balloon.html"];
 
   var value = pages[Math.floor(Math.random() * pages.length)];
-
-  if (window.location == "index.html") {
-    window.location = "album-pages/" + value;
-  }
-  else {window.location = "../album-pages/" + value;}
+  console.log(window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')));
+  if (window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')).endsWith("album-pages")) {
+    window.location = "../" + value;}
+  else {window.location = value;}
 }
