@@ -254,7 +254,7 @@ iframe {
 	padding: 0;
   }
   
-  #album-cover, #album-info {
+  #album-cover, #album-info, #introduction {
     max-width: 100%;
   }
 
