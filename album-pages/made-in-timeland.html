@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Made In Timeland</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+
+  <script type="text/javascript" src="../kinggizz.js"></script>
+</head>
+
+<body>
+
+<div id="hero"></div>
+
+<div id="menu" class="overlay">
+  <button id="overlay-button" class="menu-button" onclick="closeMenu()"><i class="fa fa-bars"></i></button>
+  <div class="overlay-content">
+    <a href="../index.html">Home</a>
+    <a href="#" onclick="randomAlbum()">Random Album</a>
+  </div>
+</div>
+
+<button class="menu-button" onclick="openMenu()"><i class="fa fa-bars"></i></button>
+
+<div id="album" class="flex">
+  <div class="flex-item-left">
+    <img id="album-cover" src="../img/timeland.png"></img>
+  </div>
+  <div class="flex-item-right">
+    <div id="album-info">
+	  <h2>Made In Timeland</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <iframe width="100%" height="380" src="https://www.youtube.com/embed/vqcY50duoEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div id="cards" class="flex">
+  <div class="flex-item-left">
+    <div class="card">
+	  <a href="omnium-gatherum.html"><img src="../img/og.jpg"></img></a>
+	  <div id="card-info">
+		<p>Give me all the variety of these tracks, but in a more standard album format</p>
+        <a class="button-primary" href="omnium-gatherum.html">Go to Omnium Gatherum</a>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="flex-item-right">
+    <div class="card">
+	  <a href="polygondwanaland.html"><img src="../img/poly.jpg"></img></a>
+	  <div id="card-info">
+        <p>Those polyrhythms were nuts - is there any more like that?</p>
+        <a class="button-primary" href="polygondwanaland.html">Go to Polygondwanaland</a>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&#169; gloyens 2022</p>
+</div>
+
+</body>
+</html>
