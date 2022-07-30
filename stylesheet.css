@@ -41,6 +41,10 @@ h3 {
   padding: 20px 10% 0;
 }
 
+.text-link {
+  font-style: italic;
+}
+
 iframe {
   margin: 20px 0;
 }
