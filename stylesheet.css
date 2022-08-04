@@ -42,7 +42,13 @@ h3 {
 }
 
 .text-link {
-  font-style: italic;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.text-link:hover {
+  border-bottom: 2px solid currentColor;
 }
 
 iframe {
@@ -282,6 +288,10 @@ iframe {
   
   h3 {
 	padding-top: 0;
+  }
+  
+  .text-link {
+    color: #fff;
   }
   
   .button-introduction {
