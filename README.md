@@ -4,6 +4,10 @@
 ## What is this project?
 This is a website aimed at introducing people to Australian rock band King Gizzard and the Lizard Wizard. Users can navigate through different albums based on their tastes, similar to a flowchart.
 
+Now band-approved!
+
+[![King Gizzard tweet](https://imgur.com/AAEC7kP.png)](https://twitter.com/kinggizzard/status/1564378462407626752)
+
 ## Aim
 The focus of this website was not so much learning as it was making something that would actually be useful to a lot of people. Although, in theory, I know a lot about HTML/CSS/JavaScript, it has never been put into practice in a fully-fledged, functional website.
 That’s what this website is. It was very well-received – you can read the discussion on the initial announcement thread [here](https://redd.it/wgv0fo). For a first real attempt at a website, I believe I achieved what I set out to do, and I’m extremely proud of the overall response.
