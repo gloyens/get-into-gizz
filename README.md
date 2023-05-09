@@ -1,5 +1,5 @@
 # Get Into Gizz
-### Live website: [https://www.get-into-gizz.com](https://gloyens.github.io/get-into-gizz/)
+### Live website: [gloyens.github.io/get-into-gizz/](https://gloyens.github.io/get-into-gizz/)
 
 ## What is this project?
 This is a website aimed at introducing people to Australian rock band King Gizzard and the Lizard Wizard. Users can navigate through different albums based on their tastes, similar to a flowchart.
