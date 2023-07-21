@@ -1,3 +1,5 @@
+# [New repo here](https://github.com/gloyens/gizz-next-remake)
+
 # Get Into Gizz
 ### Live website: [gloyens.github.io/get-into-gizz/](https://gloyens.github.io/get-into-gizz/)
 
